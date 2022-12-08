@@ -1,0 +1,6 @@
+alert("Salutare la toata lumea")
+window.alert("Salut")
+confirm("OkBa")
+console.log("LogAdressadd1")
+console.info("akakakaak")
+console.error("aibelit")
