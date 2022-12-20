@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function inmultire(a, b) {
+            return a * b;
+        }
+        // m=5 valoare dafult de back up daca nu este definit
+        function adunare(n, m = 5) {
+            if (typeof n == "number" && typeof m == "number") {
+                return n + m;
+            }
+            else {
+                return 0;
+            }
+        }
+        function scadere(n, m) {
+            if (n < m) {
+                return m - n
+            }
+            else {
+                return n - m;
+            }
+        }
+        function impartire(n, m) {
+            if (n < m) {
+                return m / n;
+            }
+            else {
+                return n / m;
+            }
+        }
+        let j = 10; k = 2;
+        console.log(`impartirea dintre ${j} si ${k} este`, impartire(j, k))
+        let c = 16, v = 22;
+        console.log(`scaderea dintre ${c} si ${v} este`, scadere(c, v))
+        let x = 'aaa', y = 22;
+        console.log(`adunarea dintre ${x} si ${y} este`, adunare(x, y))
+        console.log(inmultire(2, 4));
+        
+    </script>
+</body>
+
+</html>

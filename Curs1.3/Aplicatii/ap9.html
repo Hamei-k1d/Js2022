@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function adunare(x, y = 5){
+              return x + y;
+            }
+ let x=eval(prompt('Primul numar este',2));
+ let y=eval(prompt('Al-2-lea numar este',6));
+ let op='a';
+ let operatie = prompt('Operatia efectuata este:a-adunare,s-scadere,im-impartire,in-inmultire',)
+ alert(operatie);
+ if(operatie == 'a')
+{
+    console.log("Rezultatul adunarii este",adunare(x,y))
+}
+
+    </script>
+</body>
+</html>
