@@ -1,0 +1,53 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body onload="alert('Buna Ziua si spor la cafeluta!')">
+    <h1>Eveniment</h1>
+    <button onclick="alert('Salut')">Apasa </button>
+   <form action="">
+   <div> 
+    <label for="nume">Nume</label>
+    <input type="text" name="nume" id="nume" onblur="alert('Numele este')">
+   </div>
+
+   <div> 
+    <label for="prenume">Prenume</label>
+    <input type="text" name="prenume" id="prenume" onfocus="info()">
+   </div>
+   <div>
+    <label for="telefon">Telefon</label>
+    <input type="text" name="telefon" id="telefon">
+   </div>
+   <div>
+    <label for="parola">parola</label>
+    <input type="text" name="parola" id="parola">
+   </div>
+
+</form>
+
+<script>
+    function info(){
+        console.log("Introduceti prenumele");
+    }
+
+   const telefon = document.getElementById("telfon");
+ telefon.addEventListener('blur', function(e) {
+    const target =e.target;
+    let str2 = '+40'+ target.value.slice(1);
+    telefon.value = str2;
+})
+const parola =document.getElementById("parola")
+parola.addEventListener('focus',(event)=>{
+    event.target.style.background ="pink";
+    event.target.style.caretcolor ='blue';
+    event.target.style.color='red'
+});
+parola.addEventListener("blue",(event)=>{event.target.style.background='';});
+</script>
+ </body>
+ </html>

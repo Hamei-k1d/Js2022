@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Arry-ul se defineste cu [],ca obiectele iar functiile se definsesc cu ()
+        let myObj = [];
+        let myArr = [];
+        // Nu putem redefini o constanta dar putem adauga cate array-uri vrem chiar daca am setat Array(3)
+        const arr = new Array(3);
+        const arrNumeric = [1, 2, 5, 8, 10];
+        console.log(arrNumeric[3]);
+        const myTeam = ['Ion', 'Dan', 'Andr4w'];
+        const demoArr = [
+            { marca: "Dacia", model: "Logan" },
+            [1, 6, 8, 23],
+            function salut() { console.log("Salut") }
+        ]
+        console.log(demoArr[1], [3]);
+        // cu () afisam functia/functiile
+        demoArr[2]();
+        // array-ul incepe de la 0 iar ultimul lenght o sa fie ultimul +1(lenght unic la array!)
+        const tablou = [
+            [1, 2, 3, 4, 5],
+            [6, 7, 8, 9, 10],
+            [11, 12, 13, 14, 15]
+        ];
+        console.log(tablou[2][4]);
+        // i<tablou.lenght datorita lungimi afisate iar i=0 deoarece arry-urile incep de la 0
+        for (let i = 0; i < tablou.length; i++) {
+            // console.log(tablou[i]);
+            for (let j = 0; j < tablou[i].length; j++) {
+                console.log(tablou[i][j]);
+            }
+        }
+    </script>
+</body>
+
+</html>
