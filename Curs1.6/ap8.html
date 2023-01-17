@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="sursa">Lorem ipsum dolor sit amet consectetur, adipisicing elit +0723402054
+        . Laudantium voluptatem aliquam fuga? Tenetur similique rerum exercitationem 
+        09424243134repudiandae 42943242
+        04124234 0239222442
+        libero nobis ratione aliquid, quaerat optio
+        0784565839 cum. Quia at quis sunt 
+        voluptates eveniet.</p>
+        <p id="destinatie"></p>
+        <script>
+            let sursa = document.getElementById('sursa').innerHTML;
+            console.log(sursa);
+            let pattern=/[\+]?[0-9\s]{10,13}/g;
+            let result =sursa.match(pattern);
+            document.getElementById("destinatie").innerHTML = result;
+        </script>
+</body>
+</html>
